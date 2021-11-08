@@ -1,0 +1,13 @@
+Constellation:
+
+Satellite: 
+
+LEOSatellite:
+
+GSOSatellite:
+
+GroundStation:
+
+Driver: Should initialize all the objects and ask the user for the source and destination of the message
+
+Communication Interface:
