@@ -6,5 +6,6 @@ public class Colors {
     public static final String RED = "\033[0;31m";
     public static final String GREEN = "\033[0;32m"; 
     public static final String PURPLE = "\033[1;95m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
 
 }

@@ -11,11 +11,13 @@ public class Driver {
     static int numberOfMessages ;
     
     public static void main(String[] args){
-        System.out.println(Colors.PURPLE+"Enter the number of messages you want to send from one groundstation station to another"+Colors.RESET);
+
+        System.out.println("\n"+Colors.PURPLE+"Enter the number of messages you want to send from one groundstation station to another"+Colors.RESET+"\n");
         Scanner scr = new Scanner(System.in)  ; 
         numberOfMessages = scr.nextInt() ; 
 
         while(numberOfMessages -->0){
+            System.out.println(Colors.ANSI_YELLOW+"Enter the intial ground station and final ground station"+Colors.RESET);
             int initialGroundStation = scr.nextInt() ; 
             int finalGroundStation = scr.nextInt() ; 
 
