@@ -2,7 +2,7 @@ package Classes;
 
 import Colors.Colors;
 
-public class LEOsatellite extends Satellite {
+public class LEOsatellite extends Satellite implements Runnable {
 
     private int finalPosition ; 
     private int LEOsatelliteID ;
@@ -10,6 +10,11 @@ public class LEOsatellite extends Satellite {
     public LEOsatellite(int finalPosition , int LEOsatelliteID){
         this.finalPosition = finalPosition ; 
         this.LEOsatelliteID = LEOsatelliteID ;
+    }
+
+    @Override
+    public void run() {
+        System.out.println("LEO Satellite thread created");
     }
 
     @Override
@@ -29,9 +34,6 @@ public class LEOsatellite extends Satellite {
         }
     }
 
-    @Override
-    public void receiveMessage() {
-        
-    }
+
 
 }

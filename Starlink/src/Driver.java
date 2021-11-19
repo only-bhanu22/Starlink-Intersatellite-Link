@@ -8,8 +8,7 @@ import Classes.GSOsatellite;
 
 public class Driver {
 
-    static int numberOfMessages ;
-    
+    static int numberOfMessages ;    
     public static void main(String[] args){
 
         System.out.println("\n"+Colors.PURPLE+"Enter the number of messages you want to send from one groundstation station to another"+Colors.RESET+"\n");
@@ -22,6 +21,10 @@ public class Driver {
             int finalGroundStation = scr.nextInt() ; 
 
             GroundStation groundStation = new GroundStation(initialGroundStation , finalGroundStation);
+
+            // Thread t = new Thread(groundStation) ; 
+            // t.start();
+            // System.out.println(t.isAlive());
             LEOsatellite [] leoSatellites = new LEOsatellite[5] ;
 
             int transferToLEO = groundStation.sendMessage(); 
