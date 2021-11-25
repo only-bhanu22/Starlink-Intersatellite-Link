@@ -1,9 +1,0 @@
-Description:
- 
-The planned starlink constellation has layers of satellites, each capable of talking to a station on the ground and also capable of using inter satellite laser links to communicate with satellites in other orbits. Obviously one would like to minimize the number of jumps a communication has to go through for minimal latency. So for faraway connections, inner orbit satellites might bump a message up to a higher orbit satellite using an ISL.
-
-After creating appropriate classes, instantiate 5 satellites in an array. Assume there are 10 ground stations on the ground. Each of these ground stations is indexed. There is also a higher orbit satellite that can see all the lower orbit satellites but cannot communicate with the ground station. 
-
-Satellite in lower orbit with index i can only see ground stations 2*i and (2*i + 1). You would have to minimize the number of hops.
-
-First, implement simple communication between the classes. Then implement the same in a multithreaded environment where each satellite is represented by a different thread.
